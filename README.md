@@ -23,11 +23,14 @@ A key feature of the project is its integration with the Plaid API, a financial 
 | |────public/
 | | |────js/
 | | |──────client.js
-| | |──────client(copy).js
 | | |──────link.js
 | | |──────signin.js
 | | |──────utils.js
 | | |────index.html
+| | |────login.html
+| | |────style.css
+| | |────image.png
+| | |────logo.png
 | |────server
 | | |────routs
 | | |──────db.js
@@ -36,8 +39,7 @@ A key feature of the project is its integration with the Plaid API, a financial 
 | | |──────simpleTransactionObject.js
 | | |──────utils.js
 | | |──────webhookServer.js
-| |────node_modules
-| | |────100+_folders
+
 ```
 ## System Overview 
 The entire workflow begins with the front-end sending requests (e.g., fetching user financial data) to the back-end server. The server processes these requests by communicating with the database and the Plaid API as needed. The results are then returned to the front-end, where they are presented to the user in a clear, user-friendly format. This architecture supports real-time processing, secure data handling, and efficient database operations, making it ideal for applications like personal finance dashboards, budgeting tools, and expense trackers.
